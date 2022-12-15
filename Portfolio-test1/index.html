@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Standart Unicode & Device Scale-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Title, Author, Description, Logo-->
+	<title>Portfolio – Esteban Albarrán</title>
+	<meta name="author" content="Esteban Albarrán Tirado"/>
+	<meta name="description" content="Portfolio created and intended to show my knowledge to companies as a presentation about who I am, my work and my knowledge. Website created by Esteban Albarrán Tirado using GitHub as hosting.">
+	<link rel="shortcut icon" type="image/png" href="media/infinito_blanco.png">
+	<!--Script for Icons-->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<!--CSS stylesheets-->
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<!--Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body class="main-container">
+	<!--Home-->
+	<section class="header">
+
+		<nav>
+			<a href="index.html"><img style="width:100px; height:60px;" src="media/infinito_blanco.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Knowledge</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<div class="text-box">
+			<h1>Esteban Albarrán Tirado</h1><br/>
+			<p>Portfolio created and intended to show my knowledge <br/>to companies as a presentation about who I am,<br/> my work and my knowledge using GitHub as hosting.</p>
+			<a href="#" class="hero-btn">More info here</a>
+		</div>
+
+	</section>
+	<!--About-->
+
+	<section class="about">
+		<h1>About me</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, similique.</p>
+
+
+
+	</section>
+
+
+
+
+
+
+	<!--JavaScript for Toggle Menu-->
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+		function hideMenu() {
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
+
+</body>
+</html>
